@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Roboto, sans-serif;
+}
+.container {   /*первый контейнер*/
+    width: 1140px;
+    position: relative;
+    /* height: 3710px; */
+    margin: 0 auto;
+}
+.promo{   /*секция1*/
+height: 800px;
+background-image:url('../img/bg/main_bg.jpg');
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat;
+padding: 39px 0 62px 0;
+}  
+
+.logo .logo_img{
+    display: block; /* картинка строчно-блочный элемент, выравнивание по центру не сработает. Поэтому задаем display:block */
+    margin: 0 auto; /* выравнивание логотипа по центру */
+}
+
+.logo .logo_text {
+    color:#ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px; /* междустрочный интервал */
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 14px;
+}
+h1 {
+    margin-top: 53px;
+}
+.title{
+    color: #f9bf3b;
+    /* font-family: "Roboto Black",sans-serif; */
+    /* font-family: Verdana, Arial, Helvetica, sans-serif;*/ /* 1ый способ подключения локальных шрифтов, которые уже есть в системе*/
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.simple .title_big {
+    color:#ffffff;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 21px;
+}
+
+h2.title{
+    margin-top: 30px;
+}
+
+.promo .promo_text{
+    padding: 0 13px;
+    margin-top: 23px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+        /* or 133% */
+    /* display: flex;
+    align-items: center; */
+}
+
+.promo .promo_text span {
+    color: #f9bf3b;
+    font-family: "Roboto - Bolid";
+    font-weight: 700;
+}
+
+.promo .promo_btn, .gift .promo_btn {
+    display: block;
+    margin: 0px auto;
+    margin-top: 73px;
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0,0,0,0.23);
+    background: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.more{
+    margin-top: 73px;
+}
+
+.more .more_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.waiting {   /*секция2*/
+    min-height: 604px;
+    background: #EFEFEF;
+    padding: 85px 0 75px 0;
+}
+
+.waiting .waiting_header, .finish_header, .first .woman_header {    /*заголовок второго контейнера*/
+    color: #252525;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.finish_header{
+    color:#ffffff;
+}
+
+.waiting .waiting_divider, .finish_divider {     /*разделитель*/
+    width: 217px;
+    height: 4px;
+    background: #F9BF3B;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+.waiting .waiting_subheader, .first_subheader {     /*подзаголовок*/
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.first_subheader{
+    margin-bottom: 40px;
+}
+
+.waiting .waiting_wrapper {     /*обертка*/   
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between; /*выравнивание элементов по главной оси левый эл-т прижался к левому краю, правый-к правому, центральный-ровно по центру.  */
+}
+.waiting .waiting_wrapper .waiting_item { /*блок для картинки и текста внутри обертки*/
+    /* display:inline-block; распологает блоки в одну линию  */
+    /* vertical-align: top;  прижимаем элементы к верхней границе */
+    /* margin: 0 15px;       отступы между элементами справа */
+    /* три строки выше отключаем, так как используем flex */
+    width: 339px;  /* задали ширину,чтобы текст переносился */
+    
+}
+.waiting .waiting_wrapper .waiting_item .waiting_img {       /*картинка*/
+    width: 100%;   /*процент от родителя,чтобы не ломалась верстка при смене картинки */
+}
+.waiting .waiting_wrapper .waiting_item .waiting_descr {/* описание под картинкой */
+    margin-top: 33px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.woman { /* на видео уроке эта секция называется optimization */
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.woman .woman_header, .first_header_blue {
+    margin-left: 391px;
+    color: #299CBD;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.first_header_blue{
+    font-size: 36px;
+    font-weight: 900;
+    margin-left: 280px;
+}
+
+.first h2 {
+    margin-top: 20px ;
+}
+.woman .woman_text{
+    color: #4A4A4A;
+    margin-left: 389px;
+    margin-top: 25px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.woman .woman_text span {
+    font-weight: 700;
+}
+
+.woman .woman_img {
+    position: absolute;  /* абсолютная позиция относительное контейнера, контейнеру задали позицию relative */
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 450px ;
+    padding: 86px 0 79px 0;
+    background-image: url(../img/bg/second_bg.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.finish .finish_wrapper{
+    margin-top: 41px;
+    display:flex;
+    justify-content: space-between;
+}
+.finish .finish_wrapper .finish_item{
+    width: 234px;
+}
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto ;
+    background-color: #B4E2FF;
+    height: 118px;
+    width: 118px;
+    border-radius: 100%;
+}
+.finish .finish_wrapper .finish_item .finish_descr{
+    margin-top: 25px;
+    color: #EFEFEF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+}
+
+.gift {
+    background-color: #EFEFEF;
+    height: 631px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+.gift .gift_img{
+    margin-top: 88px;
+    border-radius: 0px;
+    margin-left: 493px;
+}
+
+.gift .gift_text{
+    padding: 30px;
+    height: 113px;
+    width: 1161px;
+    margin-top: 40px;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+ }
+
+.first .first_img {
+    display: block;
+    width: 342px;
+    height: 201px;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+footer {
+    height: 169px;
+    background: #1A1A1A;
+    padding: 61px 0 69px 0;
+}
+
+
+.container_link {
+    margin: 0 auto;
+    width: 407px;
+    color: #888888;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+a:link {
+    color: #888888;   
+    margin:0 10px 0 10px;
+}
+
+/* АДАПТАЦИЯ ПРИКРЕПЛЯЮ ЗДЕСЬ ТАК КАК ОТДЕЛЬНЫМ ФАЙЛОМ МЕДИА НЕ СРАБАТЫВАЮТ ДЛЯ НЕКОТОРЫХ ЭЛЕМЕНТоВ */
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    .gift {
+        text-align: center;
+    }
+    .gift .gift_img {
+        margin: 0 auto;
+    }
+    .gift_text {
+        max-width: 900px;    
+    }
+    .first_header_blue {
+        margin-left: 190px;
+    }
+}
+@media only screen and (max-width: 991.9px) {
+    .container {
+        max-width: 755px;
+    }
+    .title{
+        font-size: 30px;
+        font-weight: 700;
+    }    
+    h2.title{
+        margin-top: 20px;
+    }
+    .gift {
+        text-align: center;
+    }
+    .gift .gift_img {
+        margin: 0 auto;
+    }
+    .gift_text {
+        max-width: 750px;
+        font-size: 20px;    
+    }
+    .woman {
+        padding: 52px 0 57px 0;
+    }
+    .woman .woman_header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 259px;
+        margin-top: 10px;
+    }
+    .woman .woman_text {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-left: 259px;
+        line-height: 20px;
+    }
+    .waiting {
+        padding: 45px 0 35px 0;
+    }
+    .waiting .waiting_wrapper {
+        margin-top: 25px;
+        width: 750px;
+    }
+    .first_header_blue {
+        margin-left: 90px;
+    }
+    .first .woman_header {
+        margin: 0 auto;  
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 470px;
+    }
+    .promo {
+        height: auto;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .simple .title_big {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 10px;
+    }
+    .promo .promo_btn {
+        margin-top: 53px;
+        width: 193px;
+        height: 42px;
+        font-size: 12px;
+    }
+    .promo .promo_text {
+        padding: 0 7px;
+        margin-top: 12px;
+        color: #FFFFFF;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .waiting_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-left: -150px;
+    }
+    .waiting_item {
+        padding: 20px 0px;
+    }
+    .woman {
+        padding: 12px 0;
+        height: auto;
+    }
+    .woman .woman_header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+    .woman .woman_img {
+        width: 470px ;
+        left: -150px;
+        top: 54px;
+    }
+    .woman .woman_text {
+        width: 320px;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-left: 170px;
+        line-height: 15px;
+    }
+    .finish {
+        padding: 20px 0;
+    }
+    .finish_header {
+        font-size: 20px;
+    }
+    .finish .finish_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gift {
+        height: auto;
+        padding: 20px 0;
+    }
+    .gift .gift_text {
+        max-width: 460px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .gift .gift_img {
+        margin: 0 auto;
+        width: 104px;
+    }
+    .gift .promo_btn {
+        margin-top: 23px;
+        width: 193px;
+        height: 42px;
+        font-size: 12px;
+    }
+    .first .first_img {
+        display: block;
+        width: 152px;
+        height: 101px;
+    }
+    .first .woman_header {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .first_header_blue {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .first_subheader {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
