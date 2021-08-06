@@ -390,7 +390,7 @@ a:link {
 
 @media only screen and (max-width: 768px) {
     .container {
-        max-width: 470px;
+        max-width: 480px;
     }
     .promo {
         height: auto;
@@ -410,7 +410,7 @@ a:link {
         font-size: 12px;
     }
     .promo .promo_text {
-        padding: 0 7px;
+        padding: 0 10px;
         margin-top: 12px;
         color: #FFFFFF;
         font-weight: 300;
@@ -496,3 +496,110 @@ a:link {
         margin-top: 5px;
     }
 }
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 320px;
+    }
+    .promo {
+        height: auto;
+        max-width: 320px;
+        padding: 29px 0 32px 0;
+    }
+    .logo .logo_img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }    
+    .title { 
+        margin-top: 10px;
+    }
+    .promo .promo_btn {
+        margin-top: 23px;
+        width: 153px;
+        height: 32px;
+        font-size: 10px;
+    }
+    .more {
+        margin-top: 23px;
+    }
+    .more .more_text {
+        font-size: 12px;
+    }
+    .waiting .waiting_img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    .waiting .waiting_wrapper {
+        max-width: 320px;
+        margin-left: 10px;
+    }
+    .waiting .waiting_header {
+        font-size: 20px;
+    }
+    .waiting .waiting_descr {
+        word-wrap:break-word; 
+        max-width: 320px;
+        padding: 0 35px;
+    }
+    .waiting .waiting_subheader {
+        font-size: 18px;
+    }
+    .woman .woman_img {
+        position: relative;
+        width: 320px;
+        left: 10px;
+        top: 24px;
+    }
+    .woman .woman_text {
+        width: 300px;
+        font-size: 12px;
+        margin: 10px;
+        line-height: 13px;
+    }
+    .woman .woman_header {
+        width: 300px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+    .finish .finish_header {
+        width: 300px;
+        padding: 10px;
+        
+    }
+    .finish .finish_wrapper {
+        align-items: center;
+        width: 300px;
+        margin-top: 21px;
+    }
+    .finish .finish_wrapper .finish_item {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .gift .gift_text {
+        width: 300px;
+    }
+    .first .first_header_blue {
+        width: 300px;
+        margin: 10px;
+        text-align: center;
+    }
+    .first .first_subheader {
+        max-width: 300px;
+    }
+    footer {
+        width: 320px;
+        padding: 20px 0;
+    }
+    .container_link {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
+        
+
+    
