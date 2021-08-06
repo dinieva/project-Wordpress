@@ -501,8 +501,7 @@ a:link {
         max-width: 320px;
     }
     .promo {
-        height: auto;
-        
+        height: auto; 
         padding: 29px 0 32px 0;
     }
     .logo .logo_img {
@@ -591,7 +590,6 @@ a:link {
         max-width: 300px;
     }
     footer {
-        width: 320px;
         padding: 20px 0;
     }
     .container_link {
